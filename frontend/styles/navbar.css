@@ -1,0 +1,112 @@
+.logo-div {
+  cursor: pointer;
+}
+.navbar-background {
+  background-color: rgba(11, 91, 11, 0.907);
+  min-width: 100%;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+}
+#navbarNav {
+  display: flex;
+  justify-content: space-between !important;
+}
+/* ---- New CSS for HOme */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* ---Search Components--- */
+.home-search-bar {
+  width: 350px;
+}
+form {
+  display: flex;
+  background-color: transparent;
+}
+.form-control {
+  min-width: 500px;
+}
+
+/* --Footer--- */
+footer{
+  font-size: 2rem;
+}
+.footer-text{
+  font-size: 1.3rem;
+}
+
+/* On smaller screens, decrease text size */
+
+
+@media (max-width: 500px){
+  .footer-text{
+    font-size: 1rem;
+  }
+  .home-search-bar {
+    width: 250px;
+  }
+  .nav-item{
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 350px) {
+  .footer-text{
+    font-size: 0.9rem;
+  }
+  .home-search-bar {
+    width: 280px;
+  }
+  .nav-item{
+    font-size: 1rem;
+  }
+}

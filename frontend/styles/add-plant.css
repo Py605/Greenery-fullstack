@@ -1,0 +1,25 @@
+.add-plant-image-div{
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+}
+.outer-div{
+  margin: auto;
+  display: flex;
+  max-width: 80vw;
+  justify-content: space-between;
+}
+.add-plant-form{
+  display: flex;
+  flex-direction: column;
+}
+.input{
+  width: 500px;
+}
+.add-plant-image{
+  width: 400px;
+  height: 400px;
+}
+.side-by-side-div{
+  display: flex;
+}

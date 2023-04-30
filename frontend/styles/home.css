@@ -1,0 +1,126 @@
+.image{
+  position:static;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.normal-text {
+  font-size: 1.3rem;
+}
+.container {
+  max-width: 90vw;
+}
+/* --- SlideShow --- */
+.slider-images {
+  /* min-width: 100vw; */
+  min-width: 100%;
+  height: auto;
+}
+/* ---- Explore List---  */
+.explore-list {
+  min-width: fit-content;
+  height: auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
+.explore-list li {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.explore-list li:hover {
+  transform: scale(1.1);
+}
+
+/* ---- Top Products ---- */
+.parent {
+  display: flex;
+  min-width: 100%;
+  min-height: 700px;
+  justify-content: space-between;
+}
+.first,
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.first {
+  min-width: 65.6%;
+  height: auto;
+}
+.second {
+  min-width: 33.6%;
+  height: auto;
+}
+.first-image {
+  min-width: 100%;
+  min-height: 49%;
+}
+.top-products-image-div1 {
+  cursor: pointer;
+  /* width: 100%;
+  height: 100%; */
+}
+.top-products-image-div2 {
+  min-width: 100%;
+  max-height: 32.5%;
+  cursor: pointer;
+}
+/* ----BlogsList---- */
+.blogsList {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-component {
+  max-width: 32.5%;
+}
+.blog-div:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+/* ----Particular Blog's  List--- */
+
+.blog-div {
+  /* border: 1px solid rgba(128, 128, 128, 0.16); */
+  box-shadow: 0 1px 4px #8080801c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* width: 100%; */
+  height: 350px;
+  border-radius: 10px;
+}
+.image-with-text {
+  min-width: max-content;
+  min-height: 70%;
+  /* height: auto; */
+}
+.text-with-img {
+  min-height: 30%;
+  line-height: 1.3rem;
+  padding: 1rem;
+}
+.text-wrap-center {
+  text-align: center;
+}
+.blogs-image {
+  width: 100%;
+  height: 100%;
+}
+.big-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.heading {
+  font-size: 1.2rem;
+}
+.read-more-btn {
+  font-size: 1.1rem;
+  color: red;
+  background: transparent;
+  border: none;
+}
