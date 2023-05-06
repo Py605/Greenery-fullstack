@@ -1,54 +1,43 @@
-import { Box, Heading, Text, VStack } from '@chakra-ui/react'
-import React, { useEffect } from 'react'
+import { Box, Heading, Text, VStack } from '@chakra-ui/react';
+import React, { useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import axios from 'axios';
 import { useState } from 'react';
 
-const PaymentSuccess = (props) => {
- 
-    const seachQuery = useSearchParams();
+const PaymentSuccess = props => {
+  const seachQuery = useSearchParams();
 
-        var referenceNum = seachQuery.get("reference")
- 
+  var referenceNum = seachQuery.get('reference');
 
-    
-    //clear localstorage
+  //clear localstorage
 
-    useEffect(()=>{
-        
-        const gmail = localStorage.getItem('gmail')
-        
-            async function fetchdata(){
-                const {data} = await axios.post('http://www.localhost:4000/api/sendgmail',{
-                    gmail,
-                    referenceNum,
-               })
-               if(data.data == 'ok'){
-                await localStorage.clear()
-               }
-             
-            }
-            fetchdata()
-       
-       
-        
-        console.log(gmail);
-       
+  useEffect(() => {
+    const gmail = localStorage.getItem('gmail');
 
-    },[])
-    return (
-        <Box>
-            <VStack h="100vh" justifyContent={"center"}>
+    async function fetchdata() {
+      const { data } = await axios.post(
+        'http://www.localhost:4000/api/sendgmail',
+        {
+          gmail,
+          referenceNum,
+        }
+      );
+      if (data.data == 'ok') {
+        await localStorage.clear();
+      }
+    }
+    fetchdata();
 
-                <Heading textTransform={"uppercase"}> Order Successfull</Heading>
+  }, []);
+  return (
+    <Box>
+      <VStack h="100vh" justifyContent={'center'}>
+        <Heading textTransform={'uppercase'}> Order Successfull</Heading>
 
-                <Text>
-                Reference-{referenceNum}
-                </Text>
+        <Text>Reference-{referenceNum}</Text>
+      </VStack>
+    </Box>
+  );
+};
 
-            </VStack>
-        </Box>
-    )
-}
-
-export default PaymentSuccess
+export default PaymentSuccess;

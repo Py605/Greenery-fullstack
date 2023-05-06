@@ -11,12 +11,12 @@ const Slideshow = ({ images }) => {
   }, [currentImage, images.length]);
 
   return (
-    <div>
+    <div className='home-container'>
       <Image
         src={images[currentImage]}
         alt="slideshow"
-        width={1200}
-        height={500}
+        width={1300}
+        height={600}
         className="slider-images"
       />
     </div>

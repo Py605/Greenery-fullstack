@@ -1,11 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +17,6 @@
     "nodemailer": "^6.9.1",
     "nodemon": "^2.0.22",
     "razorpay": "^2.8.2"
-  }
+  },
+  "description": ""
 }

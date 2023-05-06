@@ -1,0 +1,9 @@
+/* --- Cart Page---  */
+.mid-container {
+  width: 90vw;
+  margin: auto;
+}
+.cart-counter {
+  display: flex;
+  flex-direction: column;
+}

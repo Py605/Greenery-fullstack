@@ -8,9 +8,12 @@ const initialState = [];
     reducers: {
        add(state,action){
         state.push(action.payload)
+       },
+       remove(state, action) {
+         return state.filter((element) => element.id !== action.payload.id);
        }
     }
 })
 
-export const {add} = productslice.actions;
+export const {add,remove} = productslice.actions;
 export default productslice.reducer;

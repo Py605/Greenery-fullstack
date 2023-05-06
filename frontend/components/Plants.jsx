@@ -9,7 +9,6 @@ function Plants() {
   const [filtertxt,setfiltertxt] = useState('');
   function filtertext(text){
     setfiltertxt(text)
-    console.log(text);
   }
   return (
     <div className="plants-conatiner">

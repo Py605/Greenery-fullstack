@@ -6,13 +6,14 @@ function ExploreListItem({ link, page }) {
   return (
     <div>
       <Link href={`${page}`} legacyBehavior>
-          <div className="image">
+          <div >
             <Image
               src={link}
               alt="some picture"
               width={130}
               height={130}
               priority
+              className="explore-image-list"
             />
           </div>
       </Link>

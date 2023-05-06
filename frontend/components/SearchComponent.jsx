@@ -10,8 +10,8 @@ function SearchComponent() {
           placeholder="Search"
           aria-label="Search"
         />
-        <button type="submit">
-          <i className="fa fa-search"></i>
+        <button className="search-btn" type="submit">
+          <i className="fa fa-search search-btn"></i>
         </button>
       </form>
     </div>

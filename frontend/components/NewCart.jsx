@@ -33,6 +33,7 @@ function NewCart() {
 
   //pay method
   const checkoutHandler = async (amount, gmail) => {
+    console.log(gmail);
     localStorage.setItem('gmail', gmail);
     const {
       data: { key },
@@ -71,11 +72,8 @@ function NewCart() {
 
   const [counter, setCounter] = useState(1);
   //store into redux
-  const handledata = (item,index) => {
+  const handledata = item => {
     dispatch(remove(item));
-
-    setdata(data.filter((element)=> element.id !== item.id))
-    console.log(index);
   };
   const cart = useSelector(state => state.cart);
   useEffect(() => {
@@ -119,7 +117,7 @@ function NewCart() {
                 <h3>${counter * item.default_image.license}</h3>
               </div>
               <div>
-                <button onClick={() => handledata(item,index)}>x</button>
+                <button onClick={() => handledata(item)}>x</button>
               </div>
             </div>
           ))

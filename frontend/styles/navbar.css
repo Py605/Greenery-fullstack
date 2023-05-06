@@ -64,7 +64,6 @@ img {
   }
 }
 
-
 /* ---Search Components--- */
 .home-search-bar {
   width: 350px;
@@ -78,35 +77,54 @@ form {
 }
 
 /* --Footer--- */
-footer{
+footer {
   font-size: 2rem;
 }
-.footer-text{
+.footer-text {
   font-size: 1.3rem;
 }
 
 /* On smaller screens, decrease text size */
 
-
-@media (max-width: 500px){
-  .footer-text{
+@media (max-width: 600px) {
+  .footer-text {
     font-size: 1rem;
   }
   .home-search-bar {
     width: 250px;
+    height: 40px;
   }
-  .nav-item{
+  .nav-item {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-text {
+    font-size: 1rem;
+  }
+  .home-search-bar {
+    width: 250px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  .search-btn {
+    height: 31px;
+    font-size: 1.1rem;
+    padding: 0.1rem;
+  }
+  .nav-item {
     font-size: 1.1rem;
   }
 }
 @media (max-width: 350px) {
-  .footer-text{
+  .footer-text {
     font-size: 0.9rem;
   }
   .home-search-bar {
-    width: 280px;
+    width: 250px;
   }
-  .nav-item{
+  .nav-item {
     font-size: 1rem;
   }
 }

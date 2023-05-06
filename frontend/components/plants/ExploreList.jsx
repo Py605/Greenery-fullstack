@@ -9,7 +9,6 @@ function ExploreList({ list,page,handledata }) {
   //fiter the data 
   function filterdata(filtertext){
        const text = filtertext.toString().split(' ');
-       console.log(text[0].toLowerCase());
        const text1 = text[0].toLowerCase();
        handledata(text1)
   }
